@@ -1,0 +1,32 @@
+{
+  "pages": [
+      "pages/details/details",
+    "pages/index/index"
+  
+    
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "面试题",
+    "navigationBarTextStyle": "black"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json",
+  "tabBar": {
+    "selectedColor": "#FF69B4",
+    "color": "#996633",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text":"首页"
+      
+      },
+      {
+        "pagePath": "pages/details/details",
+        "text":"个人详情"
+      
+      }
+    ]
+  }
+}

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // var arr= [100,200,300,100]
+        // var arr="adsadsadasaaaaaaassss"
+        // var sm=[];
+        // for(var i=0;i<arr.length;i++){
+        //     // console.log(arr[i])
+        //     if(sm.indexOf(arr[i])==-1){
+        //         sm.push(arr[i])
+        //     }
+        // }  
+        // console.log(sm)
+        // arr.sort();
+        // for(var i=0;i<arr.length;i++){
+        //     if(arr[i]==arr[i+1]){
+        //         arr.splice(i,1);
+        //         i--
+        //     }
+        // }
+        // console.log(arr)
+
+
+        // 出现最多的次数字母与次数
+        var arr = "dsadsaaaaaaaaaaaaaaaaaaaaaaaaaasssssssssssssssssssssssd;;d,,,;;;;;,,,,,";
+        var obj = {};
+
+        // for(var i=0;i<arr.length;i++){
+        //     var k=arr[i];
+        //     console.log(k,arr[i],obj[k])
+        // if(obj[k]){
+        //     obj[k]++
+        // }else{
+        //     obj[k]=1
+        // }
+        // }
+        // console.log(obj)
+        for (var i = 0; i < arr.length; i++) {
+            // console.log(obj[arr[i]],arr[i])
+            if (obj[arr[i]]) {
+                obj[arr[i]]++
+            } else {
+                obj[arr[i]] = 1
+            }
+        }
+        console.log(obj)
+        let num = 0;
+        let value = 0;
+        for (var j in obj) {
+            // console.log(obj[j],j)
+            if (obj[j] > num) {
+                num = obj[j];
+                value = j;
+            }
+        }
+        console.log(value,num)
+    </script>
+</body>
+
+</html>

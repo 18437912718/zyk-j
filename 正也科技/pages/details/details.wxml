@@ -1,0 +1,16 @@
+<!--pages/details/details.wxml-->
+<view>
+<view class='header'>
+<open-data type="userAvatarUrl" class='userInfo'></open-data>
+</view>
+
+<open-data class='store_address' type="userNickName" ></open-data>
+<!-- 需要使用 button 来授权登录 -->
+<button wx:if="{{canIUse}}" open-type="getUserInfo" bindgetuserinfo="bindGetUserInfo"></button>
+<view wx:else>请升级微信版本</view>
+<view class="images">
+<image src="{{img}}"></image>
+</view>
+
+
+</view>

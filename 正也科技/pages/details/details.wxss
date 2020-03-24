@@ -1,0 +1,29 @@
+.header {
+  border-radius: 50%;
+  overflow: hidden;
+  width: 120rpx;
+  height: 120rpx;
+  position: relative;
+  background: yellow;
+  left:50%;
+  transform: translate(-50%,0);
+  top: 150rpx;
+}
+ .store_address{
+  display: flex;
+  justify-content: center;
+  padding-top: 10px;
+ }
+button {
+  background: transparent;
+}
+.images{
+  position: absolute;
+  top: 0;
+  z-index: -1
+}
+.images image{
+  height: 400rpx;
+  widows: 100%;
+  filter: blur(10rpx);
+}
